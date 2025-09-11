@@ -77,6 +77,13 @@
         "staticFilePath": "dist/apps/web-angular/browser",
         "spa": true
       }
-    }
+    },
+    "storybook": {
+  "executor": "@storybook/angular:start-storybook",
+  "options": {
+    "configDir": "apps/web-angular/.storybook",
+    "browserTarget": "web-angular:build"
+  }
+}
   }
 }

@@ -1,99 +1,77 @@
-UI Challenges Monorepo
+# Myworkspace
 
-A polyglot Nx workspace for practicing UI development challenges using Angular, React, and Vue, with Storybook for component-driven development.
+<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
-This setup is designed to help front-end engineers master UI architecture, design systems, and component-driven workflows — all in one monorepo.
+✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
 
-Tech Stack
+[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/intro#learn-nx?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
 
-🏗 Nx
- – scalable monorepo build system
+## Finish your CI setup
 
-📦 pnpm
- – fast, disk-efficient package manager
+[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/82M2mYgnMx)
 
-⚛️ React
- – modern component-based UI
 
-🅰️ Angular
- – enterprise-ready framework
+## Run tasks
 
-🌐 Vue
- – progressive framework for UIs
+To run tasks with Nx use:
 
-📖 Storybook
- – isolated component development & docs
+```sh
+npx nx <target> <project-name>
+```
 
-🧹 ESLint + Prettier – consistent code style
+For example:
 
-Project Structure
-ui-challenges/
-├── apps/
-│   ├── angular-playground/     # Angular demo app
-│   ├── react-playground/       # React demo app
-│   └── vue-playground/         # Vue demo app
-├── libs/
-│   ├── angular-ui/             # Angular UI components
-│   ├── react-ui/               # React UI components
-│   └── vue-ui/                 # Vue UI components
-├── nx.json                     # Nx configuration
-├── tsconfig.base.json          # Base TypeScript config
-├── pnpm-workspace.yaml         # pnpm workspaces config
-└── package.json
+```sh
+npx nx build myproject
+```
 
-🚀 Getting Started
+These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
 
-1. Install pnpm
-npm install -g pnpm
+[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-2. Install dependencies
-pnpm install
+## Add new projects
 
-3. Run playground apps
+While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
 
-Angular:
+To install a new plugin you can use the `nx add` command. Here's an example of adding the React plugin:
+```sh
+npx nx add @nx/react
+```
 
-pnpm nx serve angular-playground
+Use the plugin's generator to create new projects. For example, to create a new React app or library:
 
-React:
+```sh
+# Generate an app
+npx nx g @nx/react:app demo
 
-pnpm nx serve react-playground
+# Generate a library
+npx nx g @nx/react:lib some-lib
+```
 
-Vue:
+You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
 
-pnpm nx serve vue-playground
+[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-4. Run Storybook
 
-Angular:
+[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-pnpm nx storybook angular-ui
+## Install Nx Console
 
-React:
+Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
 
-pnpm nx storybook react-ui
+[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-Vue:
+## Useful links
 
-pnpm nx storybook vue-ui
+Learn more:
 
-🛠️ Useful Commands
-Command Description
-pnpm nx serve <app> Run Angular/React/Vue playground
-`pnpm nx build <app lib>`
-`pnpm nx test <app lib>`
-`pnpm nx lint <app lib>`
-pnpm nx storybook <lib> Start Storybook for a UI library
-pnpm nx build-storybook <lib> Build Storybook for deployment
-pnpm nx graph Visualize project dependencies
-🎯 Goals of This Monorepo
+- [Learn more about this workspace setup](https://nx.dev/getting-started/intro#learn-nx?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
+- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
 
-Centralize UI challenges across Angular, React, and Vue
-
-Practice design systems with Storybook
-
-Learn Nx workflows (generators, executors, dependency graph)
-
-Build reusable, documented components in multiple frameworks
-
-Prepare for real-world large-scale frontend projects
+And join the Nx community:
+- [Discord](https://go.nx.dev/community)
+- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
+- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
+- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)

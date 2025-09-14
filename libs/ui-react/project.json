@@ -9,7 +9,8 @@
     "build": {
       "executor": "@nx/vite:build",
       "options": {
-        "configFile": "libs/ui-react/vite.config.mts"
+        "configFile": "libs/ui-react/vite.config.mts",
+        "outputPath": "dist/libs/ui-react"
       }
     }
   }

@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myworkspace/ui-angular": ["libs/ui-angular/src/index.ts"],
+      "@myworkspace/ui-react": ["libs/ui-react/src/index.ts"],
+      "@myworkspace/ui-vue": ["libs/ui-vue/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

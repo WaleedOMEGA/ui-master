@@ -19,10 +19,32 @@
                 "deprecationMessage": "",
                 "type": "StorybookConfig",
                 "defaultValue": "{\r\n  stories: ['../src/app/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],\r\n  addons: [],\r\n  framework: {\r\n    name: '@storybook/angular',\r\n    options: {},\r\n  },\r\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    // later you can bind @Input() props here\r\n  },\r\n}"
             }
         ],
         "functions": [],
-        "typealiases": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<PricingTableWrapper>",
+                "file": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            }
+        ],
         "enumerations": [],
         "groupedVariables": {
             "apps/web-angular/.storybook/main.ts": [
@@ -36,11 +58,37 @@
                     "type": "StorybookConfig",
                     "defaultValue": "{\r\n  stories: ['../src/app/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],\r\n  addons: [],\r\n  framework: {\r\n    name: '@storybook/angular',\r\n    options: {},\r\n  },\r\n}"
                 }
+            ],
+            "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    // later you can bind @Input() props here\r\n  },\r\n}"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {}
+        "groupedTypeAliases": {
+            "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PricingTableWrapper>",
+                    "file": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ]
+        }
     },
     "routes": {
         "name": "<root>",
@@ -57,6 +105,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "config",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

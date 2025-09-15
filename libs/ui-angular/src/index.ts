@@ -1,1 +1,1 @@
-export * from './lib/ui-angular/ui-angular';
+export * from './lib/pricing-table/pricing-table';

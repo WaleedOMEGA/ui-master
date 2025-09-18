@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { PricingTable } from '@myworkspace/ui-angular';
+import { PricingTable, ToggleButton } from '@myworkspace/ui-angular';
 @Component({
   selector: 'app-pricing-table',
-  imports: [PricingTable],
+  imports: [ToggleButton],
 
 templateUrl: './pricing-table.html',
   styleUrl: './pricing-table.scss',

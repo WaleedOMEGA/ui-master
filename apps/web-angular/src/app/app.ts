@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
 import { PricingTableWrapper } from "./pricing-table/pricing-table";
 
 @Component({
-  imports: [NxWelcome, RouterModule, PricingTableWrapper],
+  imports: [RouterModule, PricingTableWrapper],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',

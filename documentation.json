@@ -28,7 +28,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n    // later you can bind @Input() props here\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    plans: mockPlans,\r\n  },\r\n}"
+            },
+            {
+                "name": "mockPlans",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Plan[]",
+                "defaultValue": "[\r\n  // --- Monthly plans ---\r\n  {\r\n    name: 'Basic',\r\n    price: 30,\r\n    currency: '$',\r\n    duration: 'mo',\r\n    features: [\r\n      { value: '5', label: 'Email Accounts' },\r\n      { value: '1', label: 'Template Style' },\r\n      { value: '25', label: 'Products Loaded' },\r\n      { value: '1', label: 'Image per Product' },\r\n      { value: 'Unlimited', label: 'Bandwidth' },\r\n    ],\r\n    signupUrl: '#',\r\n    type: 'monthly',\r\n    isVisible: true,\r\n  },\r\n  {\r\n    name: 'Pro',\r\n    price: 60,\r\n    currency: '$',\r\n    duration: 'mo',\r\n    features: [\r\n      { value: '10', label: 'Email Accounts' },\r\n      { value: '3', label: 'Template Styles' },\r\n      { value: '50', label: 'Products Loaded' },\r\n      { value: '3', label: 'Images per Product' },\r\n      { value: 'Unlimited', label: 'Bandwidth' },\r\n      { value: '24/7', label: 'Priority Support' },\r\n    ],\r\n    signupUrl: '#',\r\n    type: 'monthly',\r\n    isVisible: true,\r\n  },\r\n  {\r\n    name: 'Enterprise',\r\n    price: 120,\r\n    currency: '$',\r\n    duration: 'mo',\r\n    features: [\r\n      { value: 'Unlimited', label: 'Email Accounts' },\r\n      { value: '10', label: 'Template Styles' },\r\n      { value: '500', label: 'Products Loaded' },\r\n      { value: '10', label: 'Images per Product' },\r\n      { value: 'Unlimited', label: 'Bandwidth' },\r\n      { value: 'Dedicated Manager', label: 'Support' },\r\n    ],\r\n    signupUrl: '#',\r\n    type: 'monthly',\r\n    isVisible: true,\r\n  },\r\n\r\n  // --- Yearly plans ---\r\n  // {\r\n  //   name: 'Basic Yearly',\r\n  //   price: 300,\r\n  //   currency: '$',\r\n  //   duration: 'yr',\r\n  //   features: [\r\n  //     { value: '5', label: 'Email Accounts' },\r\n  //     { value: '1', label: 'Template Style' },\r\n  //     { value: '25', label: 'Products Loaded' },\r\n  //     { value: '1', label: 'Image per Product' },\r\n  //     { value: 'Unlimited', label: 'Bandwidth' },\r\n  //   ],\r\n  //   signupUrl: '#',\r\n  //   type: 'yearly',\r\n  //   isVisible: false,\r\n  // },\r\n  // {\r\n  //   name: 'Pro Yearly',\r\n  //   price: 600,\r\n  //   currency: '$',\r\n  //   duration: 'yr',\r\n  //   features: [\r\n  //     { value: '10', label: 'Email Accounts' },\r\n  //     { value: '3', label: 'Template Styles' },\r\n  //     { value: '50', label: 'Products Loaded' },\r\n  //     { value: '3', label: 'Images per Product' },\r\n  //     { value: 'Unlimited', label: 'Bandwidth' },\r\n  //     { value: '24/7', label: 'Priority Support' },\r\n  //   ],\r\n  //   signupUrl: '#',\r\n  //   type: 'yearly',\r\n  //   isVisible: false,\r\n  // },\r\n  // {\r\n  //   name: 'Enterprise Yearly',\r\n  //   price: 1200,\r\n  //   currency: '$',\r\n  //   duration: 'yr',\r\n  //   features: [\r\n  //     { value: 'Unlimited', label: 'Email Accounts' },\r\n  //     { value: '10', label: 'Template Styles' },\r\n  //     { value: '500', label: 'Products Loaded' },\r\n  //     { value: '10', label: 'Images per Product' },\r\n  //     { value: 'Unlimited', label: 'Bandwidth' },\r\n  //     { value: 'Dedicated Manager', label: 'Support' },\r\n  //   ],\r\n  //   signupUrl: '#',\r\n  //   type: 'yearly',\r\n  //   isVisible: false,\r\n  // },\r\n]"
             }
         ],
         "functions": [],
@@ -68,7 +78,17 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n    // later you can bind @Input() props here\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    plans: mockPlans,\r\n  },\r\n}"
+                },
+                {
+                    "name": "mockPlans",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Plan[]",
+                    "defaultValue": "[\r\n  // --- Monthly plans ---\r\n  {\r\n    name: 'Basic',\r\n    price: 30,\r\n    currency: '$',\r\n    duration: 'mo',\r\n    features: [\r\n      { value: '5', label: 'Email Accounts' },\r\n      { value: '1', label: 'Template Style' },\r\n      { value: '25', label: 'Products Loaded' },\r\n      { value: '1', label: 'Image per Product' },\r\n      { value: 'Unlimited', label: 'Bandwidth' },\r\n    ],\r\n    signupUrl: '#',\r\n    type: 'monthly',\r\n    isVisible: true,\r\n  },\r\n  {\r\n    name: 'Pro',\r\n    price: 60,\r\n    currency: '$',\r\n    duration: 'mo',\r\n    features: [\r\n      { value: '10', label: 'Email Accounts' },\r\n      { value: '3', label: 'Template Styles' },\r\n      { value: '50', label: 'Products Loaded' },\r\n      { value: '3', label: 'Images per Product' },\r\n      { value: 'Unlimited', label: 'Bandwidth' },\r\n      { value: '24/7', label: 'Priority Support' },\r\n    ],\r\n    signupUrl: '#',\r\n    type: 'monthly',\r\n    isVisible: true,\r\n  },\r\n  {\r\n    name: 'Enterprise',\r\n    price: 120,\r\n    currency: '$',\r\n    duration: 'mo',\r\n    features: [\r\n      { value: 'Unlimited', label: 'Email Accounts' },\r\n      { value: '10', label: 'Template Styles' },\r\n      { value: '500', label: 'Products Loaded' },\r\n      { value: '10', label: 'Images per Product' },\r\n      { value: 'Unlimited', label: 'Bandwidth' },\r\n      { value: 'Dedicated Manager', label: 'Support' },\r\n    ],\r\n    signupUrl: '#',\r\n    type: 'monthly',\r\n    isVisible: true,\r\n  },\r\n\r\n  // --- Yearly plans ---\r\n  // {\r\n  //   name: 'Basic Yearly',\r\n  //   price: 300,\r\n  //   currency: '$',\r\n  //   duration: 'yr',\r\n  //   features: [\r\n  //     { value: '5', label: 'Email Accounts' },\r\n  //     { value: '1', label: 'Template Style' },\r\n  //     { value: '25', label: 'Products Loaded' },\r\n  //     { value: '1', label: 'Image per Product' },\r\n  //     { value: 'Unlimited', label: 'Bandwidth' },\r\n  //   ],\r\n  //   signupUrl: '#',\r\n  //   type: 'yearly',\r\n  //   isVisible: false,\r\n  // },\r\n  // {\r\n  //   name: 'Pro Yearly',\r\n  //   price: 600,\r\n  //   currency: '$',\r\n  //   duration: 'yr',\r\n  //   features: [\r\n  //     { value: '10', label: 'Email Accounts' },\r\n  //     { value: '3', label: 'Template Styles' },\r\n  //     { value: '50', label: 'Products Loaded' },\r\n  //     { value: '3', label: 'Images per Product' },\r\n  //     { value: 'Unlimited', label: 'Bandwidth' },\r\n  //     { value: '24/7', label: 'Priority Support' },\r\n  //   ],\r\n  //   signupUrl: '#',\r\n  //   type: 'yearly',\r\n  //   isVisible: false,\r\n  // },\r\n  // {\r\n  //   name: 'Enterprise Yearly',\r\n  //   price: 1200,\r\n  //   currency: '$',\r\n  //   duration: 'yr',\r\n  //   features: [\r\n  //     { value: 'Unlimited', label: 'Email Accounts' },\r\n  //     { value: '10', label: 'Template Styles' },\r\n  //     { value: '500', label: 'Products Loaded' },\r\n  //     { value: '10', label: 'Images per Product' },\r\n  //     { value: 'Unlimited', label: 'Bandwidth' },\r\n  //     { value: 'Dedicated Manager', label: 'Support' },\r\n  //   ],\r\n  //   signupUrl: '#',\r\n  //   type: 'yearly',\r\n  //   isVisible: false,\r\n  // },\r\n]"
                 }
             ]
         },
@@ -115,6 +135,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "apps/web-angular/src/app/pricing-table/pricing-table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "mockPlans",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

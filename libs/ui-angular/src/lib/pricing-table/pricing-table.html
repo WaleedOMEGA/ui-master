@@ -1,1 +1,26 @@
-<p>pricing-table works! waleed</p>
+<div class="pricing-list">
+  @for(plan of plans(); track $index){
+  <div class="plan" [attr.data-type]="plan.type" [class.is-visible]="plan.isVisible">
+
+    <header>
+      <h2>{{plan.name}}</h2>
+      <div class="price">
+        <span class="currency">{{plan.currency}}</span>
+        <span class="value">{{plan.price}}</span>
+        <span class="duration">{{plan.duration}}</span>
+      </div>
+    </header>
+    <div class="pricing-body">
+      <ul class="features">
+        @for(feature of plan.features; track $index){
+        <li><em>{{feature.value}}</em> {{feature.label}}</li>
+        }
+      </ul>
+    </div>
+    <footer class="pricing-footer">
+      <a class="select">Sign Up</a>
+    </footer>
+  </div>
+  }
+
+</div>

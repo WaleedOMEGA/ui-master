@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'lib-toggle-button',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './toggle-button.html',
   styleUrl: './toggle-button.scss',
 })
-export class ToggleButton {}
+export class ToggleButton {
+  @Output() toggleChange = new EventEmitter<'monthly' | 'yearly'>();
+
+  onToggle(value: 'monthly' | 'yearly') {
+    this.toggleChange.emit(value);
+  }
+}

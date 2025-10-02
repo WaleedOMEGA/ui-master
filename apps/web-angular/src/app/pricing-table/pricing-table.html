@@ -1,4 +1,4 @@
 <div class="pricing-container">
-  <lib-toggle-button></lib-toggle-button>
-  <lib-pricing-table [plans]="plans()"></lib-pricing-table>
+  <lib-toggle-button (toggleChange)="onPlanTypeChange($event)"></lib-toggle-button>
+  <lib-pricing-table [plans]="filteredPlans()"></lib-pricing-table>
 </div>

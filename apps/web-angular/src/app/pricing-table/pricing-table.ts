@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input, signal } from '@angular/core';
 import { Plan, PricingTable, ToggleButton } from '@myworkspace/ui-angular';
 @Component({
   selector: 'app-pricing-table',
@@ -9,4 +9,12 @@ import { Plan, PricingTable, ToggleButton } from '@myworkspace/ui-angular';
 })
 export class PricingTableWrapper {
   plans = input<Plan[]>([]);
+  selectedType = signal<'monthly' | 'yearly'>('monthly');
+  filteredPlans = computed(() =>
+    this.plans().filter(plan => plan.type === this.selectedType())
+  );
+
+  onPlanTypeChange(type: 'monthly' | 'yearly') {
+    this.selectedType.set(type);
+  }
 }
